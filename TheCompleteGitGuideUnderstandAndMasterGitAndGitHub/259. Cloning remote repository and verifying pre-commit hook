@@ -1,0 +1,9 @@
+# Cloning remote repository and verifying pre-commit hook
+
+- git clone git@github.com:alixnamoussart/git-hooks-nodejs.git git-hooks-nodejs-from-remote
+- no node_modules
+- no pre-commit in .git/hooks
+- install npm packages that are in package.json: jest and pre-commit: <mark>npm install is enough</mark> => installs pre-commit in .git/hooks, install all necessary npm modules
+- change mult module, add, commit => failure
+- pre-commit NPM package doesn't support other Git hooks except pre-commit hook
+
